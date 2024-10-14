@@ -17,7 +17,7 @@ app.use(express.urlencoded({extended:true}));
 app.use(cookieParser());
 
 const corsOptions= {
-    origin:'https://job-portal-blush-rho.vercel.app',
+    origin:'https://job-portal-blush-rho.vercel.app/',
     credentials:true
 }
 app.use(cors(corsOptions));
