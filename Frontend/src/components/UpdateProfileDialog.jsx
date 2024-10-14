@@ -239,7 +239,7 @@ export default function UpdateProfileDialog({ open, setOpen }) {
                                 <Label htmlFor="name" className="text-right">Name</Label>
                                 <Input
                                     id="name"
-                                    name="name"
+                                    name="fullname"
                                     value={input.fullname}
                                     onChange={changeEventHandler}
                                     className="col-span-3"
