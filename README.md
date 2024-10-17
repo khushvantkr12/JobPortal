@@ -21,31 +21,3 @@ Job Status Monitoring: View the status of job applications, categorized as:
 Pending
 Rejected
 Accepted
-For Recruiters:
-User Authentication:
-Signup: Register using email and password.
-Login: Secure access via email and password authentication.
-Job Posting:
-Create Job Listings: Define job roles with detailed information.
-Job Description (JD): Provide comprehensive job descriptions.
-Salary Details: Specify salary ranges for positions.
-Requirements: Outline necessary qualifications and skills.
-Number of Positions: Indicate the number of available slots.
-Post Jobs: Publish job listings to attract candidates.
-Candidate Management:
-Applicant Overview: View and manage students who have applied for jobs.
-Accept/Reject Applications: Decide on candidate suitability by accepting or rejecting applications.
-Advanced Filtering:
-Company Filtering: Search and filter job listings based on company preferences.
-Technology Stack
-Backend:
-Node.js: Server-side runtime environment.
-Express.js: Web application framework for building APIs.
-MongoDB: NoSQL database for efficient data storage and retrieval.
-Frontend:
-React: Library for building dynamic user interfaces.
-Redux: State management library for predictable application state.
-Tailwind CSS: Utility-first CSS framework for rapid UI development.
-shadcn/UI: Component library for enhanced UI/UX design.
-Additional Tools:
-Cloudinary: Cloud-based service for storing and managing PDF resumes securely.
