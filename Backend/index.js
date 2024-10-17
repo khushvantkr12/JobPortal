@@ -26,10 +26,10 @@ const corsOptions= {
 }
 app.use(cors(corsOptions));
 
-// app.get("/",(req,res)=>{
-//     res.send("heyy your server is running successfully");
+app.get("/",(req,res)=>{
+    res.send("heyy your server is running successfully");
     
-// })
+})
 //testing for params
 // app.get('/users/:id', (req, res) => {
 //     const userId = req.params.id;
