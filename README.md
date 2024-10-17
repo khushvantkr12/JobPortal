@@ -33,4 +33,12 @@ Database-->MongoDB
 <br/>
 Run Command--> npm run dev
 
-![alt text]("C:\Users\91620\OneDrive\Pictures\Screenshots\Screenshot (288).png")
+
+![Screenshot (288)](https://github.com/user-attachments/assets/e5d86e0e-d2b7-4f3f-9a15-edd11e673bf6)
+![Screenshot (290)](https://github.com/user-attachments/assets/1489ba94-4a15-4ef6-853f-a18f0c9072d0)
+![Screenshot (294)](https://github.com/user-attachments/assets/8d1527fc-d6e6-4ada-a871-11f1a58820af)
+![Screenshot (287)](https://github.com/user-attachments/assets/21a3c245-fb4a-400d-9776-6d80e472b210)
+![Screenshot (291)](https://github.com/user-attachments/assets/e3db4ca1-c306-406f-99c5-306d2cadc6ad)
+![Screenshot (292)](https://github.com/user-attachments/assets/b7061cec-fcf9-4c8b-9b03-0493a1fc241f)
+![Screenshot (293)](https://github.com/user-attachments/assets/3526a879-6215-4f87-b1c7-92fdd67cf1e0)
+![Screenshot (296)](https://github.com/user-attachments/assets/12e9e483-7163-4a7b-b8b2-469304cb5de4)
