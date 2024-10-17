@@ -23,6 +23,9 @@ Advanced Filtering: To enhance the recruitment process further, JobPortal offers
 
 2. Technology Stack:
 Backend:Node JS, Express JS.
+<br/>
 Front-End Development-->React JS, Tailwind,redux,shadcn/ui
+<br/>
 MongoDB-->Database
+<br/>
 Run Command--> npm run dev
