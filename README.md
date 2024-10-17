@@ -32,3 +32,5 @@ Front-End Development-->React JS, Tailwind,redux,shadcn/ui
 Database-->MongoDB
 <br/>
 Run Command--> npm run dev
+
+![alt text]("C:\Users\91620\OneDrive\Pictures\Screenshots\Screenshot (288).png")
