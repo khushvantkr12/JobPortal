@@ -22,6 +22,7 @@ Candidate Management: Managing applications is streamlined through JobPortal’s
 Advanced Filtering: To enhance the recruitment process further, JobPortal offers advanced filtering options for recruiters. This feature enables them to search and filter job listings based on company preferences, ensuring that they can focus on opportunities that align with their organizational needs and culture. This targeted approach aids in attracting the most suitable candidates, optimizing the recruitment workflow.
 
 2. Technology Stack:
+    <br/>
 Backend:Node JS, Express JS.
 <br/>
 Front-End Development-->React JS, Tailwind,redux,shadcn/ui
