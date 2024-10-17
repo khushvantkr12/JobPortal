@@ -32,6 +32,7 @@ Front-End Development-->React JS, Tailwind,redux,shadcn/ui
 Database-->MongoDB
 <br/>
 Run Command--> npm run dev
+*************************--------------------------------------********************************
 <br/>
 
 ![Screenshot (288)](https://github.com/user-attachments/assets/e5d86e0e-d2b7-4f3f-9a15-edd11e673bf6)
