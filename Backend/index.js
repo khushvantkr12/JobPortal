@@ -21,7 +21,7 @@ app.use(express.urlencoded({extended:true}));
 app.use(cookieParser());
 
 const corsOptions= {
-    origin:'https://job-portal-iota-gilt.vercel.app',
+    origin:'https://jobportal-pg7i.onrender.com',
     credentials:true
 }
 app.use(cors(corsOptions));
