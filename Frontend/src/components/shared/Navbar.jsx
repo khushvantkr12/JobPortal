@@ -40,7 +40,7 @@ export default function Navbar() {
           <Link to="/" className="flex items-center">
             <img src={logo} alt="JobPortal Logo" className="w-12 h-12 mr-2" /> {/* Adjust logo size and add margin */}
             <h1 className="text-2xl font-bold">
-              Job<span className="text-[#F83002]">Portal</span>
+              Rojgar<span className="text-[#F83002]">Junction</span>
             </h1>
           </Link>
         </div>
