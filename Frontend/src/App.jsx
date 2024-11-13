@@ -14,6 +14,7 @@ import PostJob from "./components/admin/PostJob"
 import Applicants from "./components/admin/Applicants"
 import ProtectedRoute from "./components/admin/ProtectedRoute"
 import ErrorPage from "./components/ErrorPage"
+import VerifyEmail from "./components/verifyEmail"
 
 const appRouter= createBrowserRouter([
   //student ke liye hai
@@ -44,6 +45,10 @@ const appRouter= createBrowserRouter([
    {
     path:'/profile',
     element:<Profile/>
+   },
+   {
+    path:'/verify-email',
+    element:<VerifyEmail/> 
    },
    {
     path:"*",
