@@ -42,7 +42,7 @@ export default function Footer() {
         {/* Footer Bottom */}
         <div className="border-t border-gray-700 pt-3">
           <p className="text-center text-gray-400 text-xs">
-            &copy; Made By Khushvant Kumar ❤️
+            &copy; Made by khushvant kumar❤️
           </p>
         </div>
       </div>
