@@ -9,7 +9,7 @@ const category=[
     "Frontend Developer",
     "Graphic Designer",
     "Software Developer",
-    "Data Science Developer",
+    "Data Science",
     "Full Stack Developer",
     "Associate Product Developer",
 ]

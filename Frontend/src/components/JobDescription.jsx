@@ -14,8 +14,8 @@ export default function JobDescription() {
    const dispatch=useDispatch();
    const params=useParams();
    const jobId=params.id;
-   const {singleJob}=useSelector(store=>store.job);
-   const {user}=useSelector(store=>store.auth);
+   const {singleJob}=useSelector((store)=>store.job);
+   const {user}=useSelector((store)=>store.auth);
    const isIntiallyApplied=singleJob?.applications?.some(application=>application.applicant === user?._id) || false;//some-->koi bhi cheez agar exist krti hai to usko true dega...application ke aandar jo user hai agar uski user._id match hojati hai to true dikhao...
    const [isApplied,setIsApplied]=useState(isIntiallyApplied);
 
@@ -40,7 +40,8 @@ export default function JobDescription() {
  useEffect(()=> {
       const fetchSingleJob=async () => {
           try{
-           const res=await axios.get(`${JOB_API_END_POINT}/get/${jobId}`,{withCredentials:true})
+            
+           const res=await axios.get(`${JOB_API_END_POINT}/get/${jobId}`,{withCredentials: true})
            if(res.data.success){
             dispatch(setSingleJob(res.data.job));
             setIsApplied(res.data.job.applications.some(application=>application.applicant === user?._id));//ensure that state is sync with fetched data

@@ -22,6 +22,7 @@ const companySchema=mongoose.Schema({
         type:String,//URL to company logo
         
     },
+
    userId:{
         type:mongoose.Schema.Types.ObjectId,
         ref:'User',

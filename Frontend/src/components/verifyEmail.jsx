@@ -88,14 +88,13 @@
 // }
 
 
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { BiArrowBack } from "react-icons/bi";
 import { RxCountdownTimer } from "react-icons/rx";
 import { Link, useNavigate } from "react-router-dom";
 import OtpInput from "react-otp-input";
 import { signUp, sendOtp } from "@/services/authAPI";
-import { setLoading, setUser } from "@/redux/authSlice";
 import toast from "react-hot-toast";
 
 export default function VerifyEmail() {

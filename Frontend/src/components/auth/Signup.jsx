@@ -216,16 +216,15 @@ export default function Signup() {
   const navigate = useNavigate();
   const dispatch = useDispatch();
   const { loading } = useSelector((store) => store.auth);
- 
-  const { fullname, email, phonenumber, password, role, file } = input;
+  const { fullname, email, phonenumber, password } = input;
+  
+
   useEffect(() => {
     dispatch(setUser("")); // Clear user data on component mount
   }, []);
 
   const changeEventHandler = (e) => {
     const { name, value } = e.target;
-    
-
     setInput((prevData) => ({
       ...prevData,
       [name]:value,
@@ -239,12 +238,11 @@ export default function Signup() {
 
   const submitHandler = (e) => {
     e.preventDefault();
-     
     const user = { ...input };
     dispatch(setUser(user));
     dispatch(sendOtp(input.email, navigate));
-
-   
+    
+    
   };
 
   return (
@@ -378,6 +376,7 @@ export default function Signup() {
               <Loader2 className="mr-2 h-4 w-4 animate-spin" />
               Please wait...
             </Button>
+            
           ) : (
             <Button type="submit" className="w-full my-4">
               Sign Up

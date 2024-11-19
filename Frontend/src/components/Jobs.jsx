@@ -4,7 +4,7 @@ import Job from "./Job";
 import { useSelector } from "react-redux";
 import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
-//const jobsArray=[1,2,3,4,5,6,7,8];
+
 
 export default function Jobs() {
   const { allJobs, searchQuery } = useSelector((store) => store.job);

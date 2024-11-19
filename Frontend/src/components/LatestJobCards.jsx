@@ -2,21 +2,32 @@ import { useNavigate } from "react-router-dom";
 import { Badge } from "./ui/badge";
 import { Button } from "./ui/button";
 import { Avatar, AvatarImage } from "./ui/avatar";
+import { setSingleJob } from "@/redux/jobSlice";
 
 
 
 export default function LatestJobCards({ job }) {
   const navigate = useNavigate();
+
+  
+  const handleCardClick = () => {
+    
+      navigate(`/description/${job._id}`);
+      
+  };
+
   return (
     <div
-      onClick={() => navigate(`/description/${job._id}`)}
+      onClick={handleCardClick}
       className="p-5 rounded-md shadow-xl bg-white border border-gray-100 cursor-pointer"
     >
       <div className="flex items-center gap-2 my-2">
         <Button className="p-6" variant="outline" size="icon">
+        
           <Avatar>
             <AvatarImage src={job?.company?.logo}></AvatarImage>
           </Avatar>
+        
         </Button>
         <div>
           <h1 className="font-medium text-lg">{job?.company?.name}</h1>

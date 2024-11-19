@@ -160,6 +160,7 @@ export function signUp(
 
       toast.success("Signup successful");
       dispatch(setUser(""));
+      //dispatch(setVerification(false));
       navigate("/login");
     } catch (error) {
       console.error("SIGNUP API ERROR:", error);

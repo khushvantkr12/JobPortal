@@ -24,7 +24,7 @@ async function sendVerificationEmail(email, otp) {
         const mailResponse = await mailSender(email,
              "Verification EMAIL from Job-Portal by-khushvant kumar",
              emailTemplate(otp));
-        console.log("Email sended Successfully!! => ", mailResponse);
+        //console.log("Email sended Successfully!! => ", mailResponse);
     } catch(error) {
         // console.error(error);
         console.log("error while SENDING.. EMAIL", error);

@@ -17,34 +17,33 @@ export default function CompanySetup() {
   useGetCompanyById(params.id);
   const [loading,setLoading]=useState(false);
   const navigate=useNavigate();
- 
 
     const [input,setInput]=useState({
         name:"",
         description:"",
         website:"",
         location:"",
-        file:"null"
     })
     const {singleCompany}=useSelector(store=>store.company);//iss singleCompany se hm by default value daalwa skte hai
     const changeEventHandler = (e) => {
         setInput({...input,[e.target.name]:e.target.value});
     }
-    const changeFileHandler = (e) => {
-      const file=e.target.files?.[0];
-      setInput({...input,file});
-  }
+
+   
+
   const submitHandler =async (e) => {
+   
      e.preventDefault();
+      if (!input.name || !input.description || !input.website || !input.location) {
+      toast.error("All fields are required");
+      return;
+    }
      const formData=new FormData();
      formData.append("name",input.name);
      formData.append("description",input.description);
      formData.append("website",input.website);
      formData.append("location",input.location);
      
-     if(input.file){
-      formData.append("file",input.file);
-     }
      try{
       setLoading(true);
       const res=await axios.put(`${COMPANY_API_END_POINT}/update/${params.id}`,formData,{
@@ -66,13 +65,14 @@ export default function CompanySetup() {
      
   }
   useEffect(() => {
+    
     setInput({
       name:singleCompany.name || "",
       description:singleCompany.description || "",
       website:singleCompany.website || "",
-      location:singleCompany.location || "",
-      file:singleCompany.file || "",
+      location:singleCompany.location || ""
     })
+  
     //jb jb single company change hoga tb ye call hoga
   },[singleCompany])
   return (
@@ -124,14 +124,9 @@ export default function CompanySetup() {
           onChange={changeEventHandler}
          />
         </div>
-        <div>
-        <Label>Logo</Label>
-        <Input
-         type="file"
-         accept="image/*"
-         onChange={changeFileHandler}
-        />
-       </div>
+
+
+      
           </div>
           {
             loading ? <Button className="w-full my-4"> <Loader2 className="mr-2 h-4 w-4 animate-spin"/>Please wait</Button> : <Button type="submit" className="w-full my-4">
