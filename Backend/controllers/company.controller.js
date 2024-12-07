@@ -40,7 +40,7 @@ export const registerCompany= async(req,res)=> {
         console.log(error);
         return res.status(500).json({
           success:false,
-          message:"company not exist",
+          message:"all fields are required",
       }) 
     }
 }
